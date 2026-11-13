@@ -82,7 +82,7 @@ jobs:
           fi
 
           git commit -m "Update playlist - $(date -u +'%Y-%m-%d %H:%M UTC')"
-          git push
+          git push origin HEAD:${{ github.ref_name }}
 
       - name: Cleanup sensitive files
         if: always()
