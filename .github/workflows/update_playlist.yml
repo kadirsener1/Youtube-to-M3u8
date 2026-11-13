@@ -27,7 +27,7 @@ jobs:
 
       - name: Secrets içinden cookies.txt Dosyasını Python ile Oluştur
         env:
-          COOKIES_BASE64: ${{ secrets.YOUTUBE_COOKIES_BASE64 }}
+          YOUTUBE_COOKIES_BASE64: ${{ secrets.YOUTUBE_COOKIES_BASE64 }}
         run: |
           python3 -c "
           import os, base64
@@ -38,7 +38,7 @@ jobs:
                   f.write(decoded_bytes)
               print('cookies.txt başarıyla oluşturuldu.')
           else:
-              print('Uyarı: YOUTUBE_COOKIES_BASE64 secret bulunamadı!')
+              print('HATA: YOUTUBE_COOKIES_BASE64 secret boş veya bulunamadı!')
           "
 
       - name: M3U Güncelleme Betiğini Çalıştır
