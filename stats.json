@@ -1,7 +1,7 @@
 {
   "total": 10,
-  "live": 6,
-  "offline": 4,
+  "live": 0,
+  "offline": 10,
   "qualities": {
     "1080p": 0,
     "720p": 0,
