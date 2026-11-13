@@ -2,9 +2,8 @@ name: Update M3U Playlist
 
 on:
   schedule:
-    # Her 4 saatte bir otomatik çalışır
     - cron: '0 */4 * * *'
-  workflow_dispatch: # Manuel test için
+  workflow_dispatch:
 
 jobs:
   update-playlist:
@@ -26,16 +25,21 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Secrets içinden cookies.txt Dosyasını Oluştur
+      - name: Secrets içinden cookies.txt Dosyasını Python ile Oluştur
         env:
           COOKIES_BASE64: ${{ secrets.YOUTUBE_COOKIES_BASE64 }}
         run: |
-          if [ -n "$COOKIES_BASE64" ]; then
-            echo "$COOKIES_BASE64" | base64 --decode > cookies.txt
-            echo "cookies.txt başarıyla oluşturuldu."
-          else
-            echo "Uyarı: YOUTUBE_COOKIES_BASE64 secret bulunamadı!"
-          fi
+          python3 -c "
+          import os, base64
+          b64_data = os.getenv('YOUTUBE_COOKIES_BASE64')
+          if b64_data:
+              decoded_bytes = base64.b64decode(b64_data)
+              with open('cookies.txt', 'wb') as f:
+                  f.write(decoded_bytes)
+              print('cookies.txt başarıyla oluşturuldu.')
+          else:
+              print('Uyarı: YOUTUBE_COOKIES_BASE64 secret bulunamadı!')
+          "
 
       - name: M3U Güncelleme Betiğini Çalıştır
         run: python update_playlist.py
