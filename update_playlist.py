@@ -8,9 +8,12 @@ def generate_m3u():
         'format': 'best',
         'quiet': True,
         'no_warnings': True,
+        'socket_timeout': 30,
+        # Bot korumasına karşı tarayıcı taklidi
+        'geo_bypass': True,
+        'extractor_args': {'youtube': {'player_client': ['web']}}
     }
 
-    # Eğer ortamda cookies.txt çözülmüşse yt-dlp'ye dahil et
     if os.path.exists("cookies.txt"):
         ydl_opts['cookiefile'] = "cookies.txt"
 
