@@ -40,7 +40,7 @@ jobs:
           PYTHONUNBUFFERED: 1
         run: |
           # Kendi Python dosyanın adını buraya yaz (Örn: main.py veya update.py)
-          python update.py
+          python generate.py
 
       - name: Commit and push changes
         run: |
