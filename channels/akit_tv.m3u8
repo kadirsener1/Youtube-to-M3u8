@@ -1,0 +1,12 @@
+#EXTM3U
+#EXT-X-VERSION:3
+# Channel: Akit TV
+# ID: UCbaLyHJp6S9Lsj6oT9aJsQw
+# Quality: 1080p
+# Country: UK
+# Status: LIVE (as of 07:13 UTC)
+# Generated: 2026-11-13 07:13:52 UTC
+# URL expires: ~12:13 UTC (refresh playlist if expired)
+
+#EXTINF:-1 tvg-id="UCbaLyHJp6S9Lsj6oT9aJsQw" tvg-logo="logos/UCbaLyHJp6S9Lsj6oT9aJsQw.jpg" tvg-name="Akit TV" group-title="Individual",Akit TV [1080p] 🔴 LIVE
+https://manifest.googlevideo.com/api/manifest/hls_playlist/expire/1794575594/ei/ibj2arfNOZC1kucP3aOG4Q0/ip/2a09:bac5:c828:a0::10:50d/id/N9SMoh8gLJI.1/itag/96/source/yt_live_broadcast/requiressl/yes/ratebypass/yes/live/1/sgoap/gir%3Dyes%3Bitag%3D140/sgovp/gir%3Dyes%3Bitag%3D137/rqh/1/hls_chunk_host/rr7---sn-ajab55-5c.googlevideo.com/xpc/EgVo2aDSNQ%3D%3D/playlist_duration/30/manifest_duration/30/ss/1/ssa/1/bui/AZFAFb9Hh2XgTUqgan3V0mo8Cp7znZ0kyJx3STnXsSSW5VSKnm4KezKneiYOrMxP5vZXo8uRZhXaZTss/spc/mpRQ_59JuNO-GrZie0Bhw_-hRjWFFLY7l8PsMEJK_yXo1WkPUfNK6RGGJpzq/vprv/1/reg/0/playlist_type/DVR/met/1794553994,/mh/85/mm/44/mn/sn-ajab55-5c/ms/lva/mv/u/mvi/7/pl/52/rms/lva,lva/dover/11/pacing/0/epbp/1/keepalive/yes/fexp/51565115/mt/1794553398/sparams/expire,ei,ip,id,itag,source,requiressl,ratebypass,live,sgoap,sgovp,rqh,xpc,playlist_duration,manifest_duration,ss,ssa,bui,spc,vprv,reg,playlist_type/sig/AE0s2JYwRAIgIXgFPNp1VcQ3RS-x_6k0B23la4h9Ybrcg1NDWqvF6g0CIEucx6dy-p5lhSgHwOmPR_fdnbtdPwBeNgyI1wCReue1/lsparams/hls_chunk_host,met,mh,mm,mn,ms,mv,mvi,pl,rms/lsig/APaTxxMwRgIhALwBG7lnkYgvBnMltC6ZXqZnUzyMdTaajFwAcJFaw9uhAiEA5r51cv7GX6XOfbD0unJlX8FtmrFUHn-AEZhM7tCFjzE%3D/playlist/index.m3u8
