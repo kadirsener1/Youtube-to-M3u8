@@ -10,10 +10,14 @@ def generate_m3u():
         'no_warnings': True,
         'socket_timeout': 30,
         'geo_bypass': True,
-        'extractor_args': {'youtube': {'player_client': ['web']}}
+        # Bot korumasını aşmak için Android veya TV istemcisini taklit et
+        'extractor_args': {
+            'youtube': {
+                'player_client': ['android', 'web']
+            }
+        }
     }
 
-    # Eğer Secret çözülüp cookies.txt oluşturulduysa yt-dlp'ye dahil et
     if os.path.exists("cookies.txt"):
         ydl_opts['cookiefile'] = "cookies.txt"
 
